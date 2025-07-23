@@ -190,6 +190,23 @@
   padding-bottom: 30px;
 }
 
+.hero2-services-row-animate {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.hero2-services-row-inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: max-content;
+  animation: hero2-marquee 18s linear infinite;
+}
+
 .hero2-service-card {
   display: flex;
   align-items: center;

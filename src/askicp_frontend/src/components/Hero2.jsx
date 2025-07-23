@@ -129,42 +129,139 @@ const Hero2 = () => (
     {/* Supported Services */}
     <section className="hero2-services-section">
       <div className="hero2-services-title">Supported Services</div>
-      <div className="hero2-services-row">
-        <div className="hero2-service-card">
-          <span className="hero2-service-icon">
-            <img src="https://moon.svg" alt="HelloMoon" style={{width: '24px', height: '24px'}} />
-          </span>
-          HelloMoon
-        </div>
-        <div className="hero2-service-card">
-          <span className="hero2-service-icon">
-            <img src="https://arkham.svg" alt="Arkham" style={{width: '24px', height: '24px'}} />
-          </span>
-          Arkham
-        </div>
-        <div className="hero2-service-card">
-          <span className="hero2-service-icon">
-            <img src="https://0x.svg" alt="0x" style={{width: '24px', height: '24px'}} />
-          </span>
-          0x
-        </div>
-        <div className="hero2-service-card">
-          <span className="hero2-service-icon">
-            <img src="https://moralis.io/favicon.ico" alt="Moralis" style={{width: '24px', height: '24px'}} />
-          </span>
-          Moralis
-        </div>
-        <div className="hero2-service-card">
-          <span className="hero2-service-icon">
-            <img src="https://helius.xyz/favicon.ico" alt="Helius" style={{width: '24px', height: '24px'}} />
-          </span>
-          Helius
-        </div>
-        <div className="hero2-service-card">
-          <span className="hero2-service-icon">
-            <img src="https://bubble.svg" alt="Bubble" style={{width: '24px', height: '24px'}} />
-          </span>
-          Bubble
+      <div className="hero2-services-row-animate">
+        <div className="hero2-services-row-inner">
+          {/* Helius */}
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://helius.xyz/favicon.ico" alt="Helius" style={{width: '24px', height: '24px'}} />
+            </span>
+            Helius
+          </div>
+          {/* Twitter */}
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://abs.twimg.com/favicons/twitter.2.ico" alt="Twitter" style={{width: '24px', height: '24px'}} />
+            </span>
+            Twitter
+          </div>
+          {/* Jupiter */}
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://jup.ag/favicon.ico" alt="Jupiter" style={{width: '24px', height: '24px'}} />
+            </span>
+            Jupiter
+          </div>
+          {/* Staking Rewards */}
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://stakingrewards.com/favicon.ico" alt="Staking Rewards" style={{width: '24px', height: '24px'}} />
+            </span>
+            Staking Rewards
+          </div>
+          {/* Birdeye */}
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://birdeye.so/favicon.ico" alt="Birdeye" style={{width: '24px', height: '24px'}} />
+            </span>
+            Birdeye
+          </div>
+          {/* 0x */}
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://0x.org/favicon.ico" alt="0x" style={{width: '24px', height: '24px'}} />
+            </span>
+            0x
+          </div>
+          {/* Arkham */}
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://arkhamintelligence.com/favicon.ico" alt="Arkham" style={{width: '24px', height: '24px'}} />
+            </span>
+            Arkham
+          </div>
+          {/* Raydium */}
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://raydium.io/favicon.ico" alt="Raydium" style={{width: '24px', height: '24px'}} />
+            </span>
+            Raydium
+          </div>
+          {/* Moralis */}
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://moralis.io/favicon.ico" alt="Moralis" style={{width: '24px', height: '24px'}} />
+            </span>
+            Moralis
+          </div>
+          {/* HelloMoon */}
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://hellomoon.io/favicon.ico" alt="HelloMoon" style={{width: '24px', height: '24px'}} />
+            </span>
+            HelloMoon
+          </div>
+          {/* Duplicate for seamless animation */}
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://helius.xyz/favicon.ico" alt="Helius" style={{width: '24px', height: '24px'}} />
+            </span>
+            Helius
+          </div>
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://abs.twimg.com/favicons/twitter.2.ico" alt="Twitter" style={{width: '24px', height: '24px'}} />
+            </span>
+            Twitter
+          </div>
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://jup.ag/favicon.ico" alt="Jupiter" style={{width: '24px', height: '24px'}} />
+            </span>
+            Jupiter
+          </div>
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://stakingrewards.com/favicon.ico" alt="Staking Rewards" style={{width: '24px', height: '24px'}} />
+            </span>
+            Staking Rewards
+          </div>
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://birdeye.so/favicon.ico" alt="Birdeye" style={{width: '24px', height: '24px'}} />
+            </span>
+            Birdeye
+          </div>
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://0x.org/favicon.ico" alt="0x" style={{width: '24px', height: '24px'}} />
+            </span>
+            0x
+          </div>
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://arkhamintelligence.com/favicon.ico" alt="Arkham" style={{width: '24px', height: '24px'}} />
+            </span>
+            Arkham
+          </div>
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://raydium.io/favicon.ico" alt="Raydium" style={{width: '24px', height: '24px'}} />
+            </span>
+            Raydium
+          </div>
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://moralis.io/favicon.ico" alt="Moralis" style={{width: '24px', height: '24px'}} />
+            </span>
+            Moralis
+          </div>
+          <div className="hero2-service-card">
+            <span className="hero2-service-icon">
+              <img src="https://hellomoon.io/favicon.ico" alt="HelloMoon" style={{width: '24px', height: '24px'}} />
+            </span>
+            HelloMoon
+          </div>
         </div>
       </div>
       <hr className="hero2-divider" />
