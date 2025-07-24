@@ -60,7 +60,7 @@ actor {
     Cycles.add(20_949_972_000);
     
     // TODO: Replace with your Claude API key
-    let claude_api_key = "YOUR_CLAUDE_API_KEY_HERE";
+    let claude_api_key = "CLAUDE_API_KEY";
     
     // Create the JSON request body for Claude API
     let request_body_json: Text = "{"
@@ -115,9 +115,5 @@ actor {
       // Return error response in the expected format
       "{\"error\":\"HTTP request failed\",\"fallback\":\"I'm having trouble connecting to Claude right now. Please try again later.\"}"
     }
-  };
-
-  public query func greet(name : Text) : async Text {
-    return "Hello, " # name # "!";
   };
 };

@@ -34,7 +34,7 @@ const Dashboard = () => {
 
   const handleSendMessage = (message) => {
     if (chatAreaRef.current) {
-      chatAreaRef.current(message);
+      chatAreaRef.current.handleSendMessage(message);
     }
   };
 
@@ -46,6 +46,13 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <Sidebar />
       <div className="dashboard-main">
+        {/* Always render ChatArea, but hide it when no messages */}
+        <ChatArea 
+          ref={chatAreaRef} 
+          onMessagesChange={handleMessagesChange}
+          style={hasFirstMessage ? {} : { display: 'none' }}
+        />
+        
         {!hasFirstMessage ? (
           <div className="dashboard-welcome-center">
             <div className="welcome-header">
@@ -74,10 +81,7 @@ const Dashboard = () => {
             </div>
           </div>
         ) : (
-          <>
-            <ChatArea onSendMessage={chatAreaRef} onMessagesChange={handleMessagesChange} />
-            <ChatInput onSendMessage={handleSendMessage} position="bottom" />
-          </>
+          <ChatInput onSendMessage={handleSendMessage} position="bottom" />
         )}
       </div>
     </div>

@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, forwardRef, useImperativeHandle } from 'react';
 import claudeApi from '../services/claudeApi';
 import './ChatArea.css';
 
-const ChatArea = ({ onSendMessage, onMessagesChange }) => {
+const ChatArea = forwardRef(({ onMessagesChange, style }, ref) => {
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
@@ -67,15 +67,13 @@ const ChatArea = ({ onSendMessage, onMessagesChange }) => {
     }
   };
 
-  // Make handleSendMessage available to parent component
-  useEffect(() => {
-    if (onSendMessage) {
-      onSendMessage.current = handleSendMessage;
-    }
-  }, [onSendMessage, messages]);
+  // Expose handleSendMessage via ref
+  useImperativeHandle(ref, () => ({
+    handleSendMessage
+  }), [messages]);
 
   return (
-    <div className="chat-area">
+    <div className="chat-area" style={style}>
       {messages.length === 0 ? (
         <div></div>
       ) : (
@@ -117,6 +115,6 @@ const ChatArea = ({ onSendMessage, onMessagesChange }) => {
       )}
     </div>
   );
-};
+});
 
 export default ChatArea;
