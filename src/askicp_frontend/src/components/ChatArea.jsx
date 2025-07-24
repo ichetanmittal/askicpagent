@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import claudeApi from '../services/claudeApi';
 import './ChatArea.css';
 
-const ChatArea = ({ onSendMessage }) => {
+const ChatArea = ({ onSendMessage, onMessagesChange }) => {
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
@@ -13,7 +13,10 @@ const ChatArea = ({ onSendMessage }) => {
 
   useEffect(() => {
     scrollToBottom();
-  }, [messages]);
+    if (onMessagesChange) {
+      onMessagesChange(messages);
+    }
+  }, [messages, onMessagesChange]);
 
   const handleSendMessage = async (messageText) => {
     if (!messageText.trim()) return;
@@ -74,26 +77,7 @@ const ChatArea = ({ onSendMessage }) => {
   return (
     <div className="chat-area">
       {messages.length === 0 ? (
-        <div className="chat-welcome">
-          <div className="welcome-icon">
-            <i className="fa-solid fa-robot"></i>
-          </div>
-          <h1 className="welcome-title">Ask ICP Agent</h1>
-          <p className="welcome-subtitle">
-            How can I help you today? Ask me anything about the Internet Computer Protocol.
-          </p>
-          <div className="welcome-suggestions">
-            <button className="suggestion-btn" onClick={() => handleSendMessage("What is the Internet Computer Protocol?")}>
-              What is the Internet Computer Protocol?
-            </button>
-            <button className="suggestion-btn" onClick={() => handleSendMessage("How do I create a smart contract?")}>
-              How do I create a smart contract?
-            </button>
-            <button className="suggestion-btn" onClick={() => handleSendMessage("Explain cycles and gas fees")}>
-              Explain cycles and gas fees
-            </button>
-          </div>
-        </div>
+        <div></div>
       ) : (
         <div className="chat-messages">
           {messages.map((message) => (

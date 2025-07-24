@@ -253,3 +253,7 @@
   flex-direction: column;
   align-items: center;
 } 
+
+.navbar-container, .navbar, .navbar-logo, .navbar-logo-title, .navbar-nav, .navbar-btn, .navbar-app-btn, .navbar-icon-btn, .navbar-auth-section, .navbar-user-menu, .navbar-profile-container, .navbar-profile-icon, .navbar-profile-dropdown, .navbar-profile-header, .navbar-profile-principal, .navbar-login-btn, .navbar-logout-btn, .navbar-dropdown-menu, .navbar-dropdown-item {
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', 'Ubuntu Mono', monospace !important;
+} 
