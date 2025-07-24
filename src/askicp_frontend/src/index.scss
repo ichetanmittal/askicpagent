@@ -1,0 +1,61 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  /* Deeper black gradient background with subtle static shine */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000 0%, #111 60%, #181818 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.03) 40%, rgba(0,0,0,0) 70%);
+  z-index: 0;
+  opacity: 0.5;
+}
+
+/* Removed @keyframes shine for static effect */
+
+img {
+  max-width: 50vw;
+  max-height: 25vw;
+  display: block;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  flex-flow: row wrap;
+  max-width: 40vw;
+  margin: auto;
+  align-items: baseline;
+}
+
+button[type="submit"] {
+  padding: 5px 20px;
+  margin: 10px auto;
+  float: right;
+}
+
+#greeting {
+  margin: 10px auto;
+  padding: 10px 60px;
+  border: 1px solid #222;
+}
+
+#greeting:empty {
+  display: none;
+}
+
+.browser-warning {
+  display: none;
+}

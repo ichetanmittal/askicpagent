@@ -1,0 +1,234 @@
+.hero2-section {
+  /* background: #232323; */
+  color: #FFB800;
+  text-align: center;
+  padding: 100px 0 10px 0;
+  min-height: 220px;
+  width: 100%;
+}
+
+.hero2-headings {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 80px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.hero2-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero2-center-heading {
+  position: relative;
+}
+
+.hero2-underline {
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background: #FFB800;
+  border-radius: 2px;
+}
+
+.hero2-subtitle {
+  color: #bdbdbd;
+  font-family: monospace;
+  font-size: 1rem;
+  margin: 32px 0 0 0;
+}
+
+.hero2-divider {
+  margin: 150px 0 0 0;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-top: 1px solid #444;
+}
+
+/* Multiple Models section */
+.hero2-models-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.hero2-models-title {
+  color: #FFB800;
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  margin-bottom: 32px;
+}
+
+.hero2-models-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.hero2-models-row-animate {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.hero2-models-row-inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: max-content;
+  animation: hero2-marquee 18s linear infinite;
+}
+
+@keyframes hero2-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.hero2-model-card {
+  display: flex;
+  align-items: center;
+  background: #2c2c2c;
+  border-radius: 16px;
+  padding: 10px 26px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1rem;
+  color: #fff;
+  gap: 12px;
+  border: 1px solid #444;
+  min-width: 120px;
+}
+
+.hero2-model-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #232323;
+  overflow: hidden;
+}
+
+/* Features row */
+.hero2-features-section {
+  margin: 80px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  text-align: center;
+}
+
+.hero2-feature {
+  flex: 1 1 0;
+  max-width: 350px;
+  border-radius: 0 0 24px 24px;
+  border: none;
+  position: relative;
+  padding: 0 16px 0 16px;
+}
+
+.hero2-feature-border {
+  /* border: 2px solid #FFB800; */
+  border-top: none;
+  border-radius: 0 0 24px 24px;
+  padding: 24px 16px 16px 16px;
+  min-height: 120px;
+  position: relative;
+}
+
+.hero2-feature-title {
+  color: #FFB800;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero2-feature-desc {
+  color: #bdbdbd;
+  font-family: monospace;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Supported Services section */
+.hero2-services-section {
+  margin: 120px 0 0 0;
+  text-align: center;
+}
+
+.hero2-services-title {
+  color: #FFB800;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  margin-bottom: 32px;
+}
+
+.hero2-services-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 32px;
+  padding-bottom: 30px;
+}
+
+.hero2-services-row-animate {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.hero2-services-row-inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: max-content;
+  animation: hero2-marquee 18s linear infinite;
+}
+
+.hero2-service-card {
+  display: flex;
+  align-items: center;
+  background: #232323;
+  border-radius: 12px;
+  padding: 10px 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1.2rem;
+  color: #fff;
+  gap: 10px;
+  border: 1px solid #444;
+  min-width: 110px;
+}
+
+.hero2-service-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #232323;
+  overflow: hidden;
+} 
