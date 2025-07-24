@@ -16,7 +16,7 @@ const agentMenuItems = [
 ];
 
 const developerMenuItems = [
-  { label: 'Upstream', icon: 'fa-code-branch' },
+  { label: 'Github', icon: 'fa-code-branch' },
   { label: 'Fork', icon: 'fa-code-fork' },
 ];
 

@@ -15,6 +15,10 @@
 .sidebar-header {
   padding: 16px;
   border-bottom: 1px solid #2d2d2d;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .sidebar-new-chat-btn {
@@ -146,4 +150,68 @@
   font-size: 12px;
   color: #e5e7eb;
   opacity: 0.8;
+}
+
+.sidebar-logout-btn {
+  width: 100%;
+  background: #2d2d2d;
+  color: #fff;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+  margin-top: 0;
+}
+
+.sidebar-logout-btn:hover {
+  background: #b91c1c;
+  color: #fff;
+}
+
+.sidebar-logo-toggle-absolute {
+  position: absolute;
+  left: 64px;
+  top: 16px;
+  width: 20px;
+  height: 20px;
+  z-index: 200;
+  /* background: #171717; */
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.sidebar.contracted {
+  width: 64px;
+  position: relative;
+}
+
+.sidebar.contracted .sidebar-new-chat-btn {
+  padding: 12px;
+  justify-content: center;
+}
+
+.sidebar.contracted .sidebar-new-chat-btn span,
+.sidebar.contracted .sidebar-new-chat-btn .fa-plus + span,
+.sidebar.contracted .conversation-title,
+.sidebar.contracted .conversation-timestamp,
+.sidebar.contracted .sidebar-section-title,
+.sidebar.contracted .sidebar-footer button span {
+  display: none;
+}
+
+.sidebar-logo-toggle {
+  margin-left: 12px;
+  font-size: 28px;
+  vertical-align: middle;
+}
+
+.sidebar.contracted .sidebar-logo-toggle {
+  margin-left: 10px;
 }
