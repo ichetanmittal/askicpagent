@@ -57,7 +57,8 @@ actor {
   public func claude_api_call(messages: Text) : async Text {
     
     // Add cycles for the HTTP call - required for HTTPS outcalls
-    Cycles.add(20_949_972_000);
+    // Increased cycles for mainnet (230B cycles for HTTPS outcalls)
+    Cycles.add(230_000_000_000);
     
     // TODO: Replace with your Claude API key
     let claude_api_key = "CLAUDE_API_KEY";
@@ -115,5 +116,9 @@ actor {
       // Return error response in the expected format
       "{\"error\":\"HTTP request failed\",\"fallback\":\"I'm having trouble connecting to Claude right now. Please try again later.\"}"
     }
+  };
+
+  public query func greet(name : Text) : async Text {
+    return "Hello, " # name # "!";
   };
 };

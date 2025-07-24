@@ -4,7 +4,9 @@ class ClaudeApiService {
   constructor() {
     try {
       // Use the generated createActor function with explicit canister ID
-      this.backend = createActor("uxrrr-q7777-77774-qaaaq-cai");
+      // For mainnet: h4gsp-yyaaa-aaaah-arila-cai, for local: uxrrr-q7777-77774-qaaaq-cai
+      const canisterId = process.env.DFX_NETWORK === 'ic' ? 'h4gsp-yyaaa-aaaah-arila-cai' : 'uxrrr-q7777-77774-qaaaq-cai';
+      this.backend = createActor(canisterId);
       console.log("Backend actor initialized successfully");
     } catch (error) {
       console.error("Failed to initialize backend actor:", error);
