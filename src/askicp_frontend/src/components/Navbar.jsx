@@ -5,14 +5,14 @@ import './Navbar.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const agentMenuItems = [
-  { label: 'Trading', icon: 'fa-arrows-rotate', link: '/trading' },
-  { label: 'Market', icon: 'fa-fire', link: '/market' },
-  { label: 'Social', icon: 'fa-user-group', link: '/social' },
-  { label: 'Liquidity', icon: 'fa-droplet', link: '/liquidity' },
-  { label: 'Staking', icon: 'fa-seedling', link: '/staking' },
-  { label: 'Knowledge', icon: 'fa-brain', link: '/knowledge' },
-  { label: 'Token', icon: 'fa-coins', link: '/token' },
-  { label: 'Wallet', icon: 'fa-wallet', link: '/wallet' },
+  { label: 'Trading', icon: 'fa-arrows-rotate', link: '/agents/trading' },
+  { label: 'Market', icon: 'fa-fire', link: '/agents/market' },
+  { label: 'Social', icon: 'fa-user-group', link: '/agents/social' },
+  { label: 'Liquidity', icon: 'fa-droplet', link: '/agents/liquidity' },
+  { label: 'Staking', icon: 'fa-seedling', link: '/agents/staking' },
+  { label: 'Knowledge', icon: 'fa-brain', link: '/agents/knowledge' },
+  { label: 'Token', icon: 'fa-coins', link: '/agents/token' },
+  { label: 'Wallet', icon: 'fa-wallet', link: '/agents/wallet' },
 ];
 
 const developerMenuItems = [
