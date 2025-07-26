@@ -5,14 +5,14 @@ import './Navbar.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const agentMenuItems = [
-  { label: 'Trading', icon: 'fa-arrows-rotate' },
-  { label: 'Market', icon: 'fa-fire' },
-  { label: 'Social', icon: 'fa-user-group' },
-  { label: 'Liquidity', icon: 'fa-droplet' },
-  { label: 'Staking', icon: 'fa-seedling' },
-  { label: 'Knowledge', icon: 'fa-brain' },
-  { label: 'Token', icon: 'fa-coins' },
-  { label: 'Wallet', icon: 'fa-wallet' },
+  { label: 'Trading', icon: 'fa-arrows-rotate', link: '/trading' },
+  { label: 'Market', icon: 'fa-fire', link: '/market' },
+  { label: 'Social', icon: 'fa-user-group', link: '/social' },
+  { label: 'Liquidity', icon: 'fa-droplet', link: '/liquidity' },
+  { label: 'Staking', icon: 'fa-seedling', link: '/staking' },
+  { label: 'Knowledge', icon: 'fa-brain', link: '/knowledge' },
+  { label: 'Token', icon: 'fa-coins', link: '/token' },
+  { label: 'Wallet', icon: 'fa-wallet', link: '/wallet' },
 ];
 
 const developerMenuItems = [
@@ -95,6 +95,7 @@ const Navbar = () => {
 // Dropdown with hover menu
 const Dropdown = ({ label, items }) => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate(); // Add this line to use navigation inside Dropdown
   return (
     <div
       className="navbar-dropdown"
@@ -108,7 +109,16 @@ const Dropdown = ({ label, items }) => {
       {items && open && (
         <div className="navbar-dropdown-menu">
           {items.map((item) => (
-            <div className="navbar-dropdown-item" key={item.label}>
+            <div
+              className="navbar-dropdown-item"
+              key={item.label}
+              onClick={() => {
+                if (item.link) {
+                  navigate(item.link);
+                }
+              }}
+              style={{ cursor: item.link ? 'pointer' : 'default' }}
+            >
               <i className={`fa-solid ${item.icon}`} style={{ marginRight: '10px', width: '20px', textAlign: 'center' }}></i>
               {item.label}
             </div>
