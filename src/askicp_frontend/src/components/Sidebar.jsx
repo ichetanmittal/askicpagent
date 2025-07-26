@@ -57,9 +57,9 @@ const Sidebar = () => {
         </div>
       )}
       <div className="sidebar-footer">
-        <button className="sidebar-logout-btn">
-          <i className="fa-solid fa-right-from-bracket"></i>
-          {!contracted && 'Logout'}
+        <button className="sidebar-connect-wallet-btn">
+          <i className="fa-solid fa-arrow-right-to-bracket"></i>
+          {!contracted && 'Connect Wallet'}
         </button>
       </div>
     </div>

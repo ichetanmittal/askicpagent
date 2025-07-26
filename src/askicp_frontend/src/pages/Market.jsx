@@ -1,6 +1,7 @@
 import React from 'react';
 import './Market.css';
 import TradingAgentNetwork from '../components/TradingAgentNetwork';
+import MarketAgent from '../components/MarketAgent';
 
 const Market = () => {
   return (
@@ -20,7 +21,7 @@ const Market = () => {
       </ul>
 
       <div>
-        <TradingAgentNetwork />
+        <MarketAgent />
       </div>
     </div>
   );

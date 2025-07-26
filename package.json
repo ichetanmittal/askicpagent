@@ -16,6 +16,7 @@
     "src/askicp_frontend"
   ],
   "dependencies": {
+    "react-icons": "^5.5.0",
     "react-router-dom": "^7.7.0"
   }
 }

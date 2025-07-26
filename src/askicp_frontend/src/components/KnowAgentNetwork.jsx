@@ -1,7 +1,7 @@
 import React from 'react';
-import './TradingAgentNetwork.css';
+import './KnowAgentNetwork.css';
 
-const TradingAgentNetwork = () => {
+const KnowAgentNetwork = () => {
   return (
     <div className="trading-network-container">
       <div className="network-diagram">
@@ -37,7 +37,7 @@ const TradingAgentNetwork = () => {
         <div className="node market-agent">
           <div className="node-content">
             {/* <div className="node-title">LSO</div> */}
-            <div className="node-subtitle">Market Agent</div>
+            <div className="node-subtitle">Market Insight</div>
           </div>
         </div>
 
@@ -51,7 +51,7 @@ const TradingAgentNetwork = () => {
                 <path d="M30 16L24 22L24 19L18 19L18 13L24 13L24 10L30 16Z" fill="currentColor"/>
               </svg>
             </div> */}
-            <div className="node-title">Trading Agent</div>
+            <div className="node-title">Knowledge Agent</div>
           </div>
         </div>
 
@@ -67,8 +67,8 @@ const TradingAgentNetwork = () => {
                 <path d="M12 8v8M8 12h8" stroke="currentColor" strokeWidth="2"/>
               </svg>
             </div>
-            <div className="node-title">DEX</div>
-            <div className="node-subtitle">Aggregator</div>
+            <div className="node-title">DeFi</div>
+            <div className="node-subtitle">Protocols</div>
           </div>
         </div>
 
@@ -81,7 +81,7 @@ const TradingAgentNetwork = () => {
                 <rect x="8" y="2" width="8" height="4" rx="1" ry="1" stroke="currentColor" strokeWidth="2" fill="none"/>
               </svg>
             </div>
-            <div className="node-title">Social Agent</div>
+            <div className="node-title">Strategies</div>
           </div>
         </div>
       </div>
@@ -89,4 +89,4 @@ const TradingAgentNetwork = () => {
   );
 };
 
-export default TradingAgentNetwork;
+export default KnowAgentNetwork;

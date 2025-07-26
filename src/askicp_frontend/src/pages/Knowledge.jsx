@@ -1,5 +1,6 @@
 import React from 'react';
 import './Knowledge.css';
+import KnowAgentNetwork from '../components/KnowAgentNetwork';
 
 const Knowledge = () => {
   return (
@@ -19,6 +20,9 @@ const Knowledge = () => {
         <li>What are the current market trends in Solana DeFi?</li>
         <li>Analyze historical protocol performance and user adoption</li>
       </ul>
+      <div>
+        <KnowAgentNetwork />
+      </div>
     </div>
   );
 };
