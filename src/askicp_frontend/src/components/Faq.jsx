@@ -3,24 +3,24 @@ import './Faq.css';
 
 const faqData = [
   {
-    question: 'What is The Hive?',
-    answer: 'The Hive is a modular network of interoperable DeFi agents.'
+    question: 'What is The PFI?',
+    answer: 'The PFI is a modular network of interoperable DeFi agents.'
   },
   {
     question: 'Which blockchains are supported?',
-    answer: 'The Hive supports multiple blockchains. Please refer to the documentation for the latest list.'
+    answer: 'The PFI supports multiple blockchains. Please refer to the documentation for the latest list.'
   },
   {
-    question: 'What else can The Hive do?',
-    answer: 'The Hive enables seamless DeFi interactions, protocol integrations, and more.'
+    question: 'What else can The PFI do?',
+    answer: 'The PFI enables seamless DeFi interactions, protocol integrations, and more.'
   },
   {
     question: 'Is the project open source?',
-    answer: 'Yes, The Hive is open source. You can find the code on our GitHub.'
+    answer: 'Yes, The PFI is open source. You can find the code on our GitHub.'
   },
   {
-    question: 'Does The Hive have a token?',
-    answer: 'Currently, The Hive does not have a native token.'
+    question: 'Does The PFI have a token?',
+    answer: 'Currently, The PFI does not have a native token.'
   },
   {
     question: 'Is there a community channel?',

@@ -25,7 +25,7 @@ const Footer = () => (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
         {beeIcon}
-        <span style={{ fontWeight: 700, fontSize: 22, color: '#FFD600' }}>The Hive</span>
+        <span style={{ fontWeight: 700, fontSize: 22, color: '#FFD600' }}>PFI</span>
       </div>
       <div style={{ marginTop: 12 }}>
         <a href="#" style={{ color: '#A9B7C6', margin: '0 12px', textDecoration: 'none', fontSize: 16 }}>Terms of Service</a>

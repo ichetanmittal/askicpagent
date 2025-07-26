@@ -59,7 +59,7 @@ const Dashboard = () => {
               <div className="welcome-icon">
                 <i className="fa-solid fa-robot"></i>
               </div>
-              <h1 className="welcome-title">Ask ICP Agent</h1>
+              <h1 className="welcome-title">PFI Agent</h1>
               <p className="welcome-subtitle">
                 How can I help you today? Ask me anything about the Internet Computer Protocol.
               </p>

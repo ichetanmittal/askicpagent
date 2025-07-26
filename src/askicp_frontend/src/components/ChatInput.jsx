@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import './ChatInput.css';
 
 const models = [
-  { label: 'Open AI', icon: '🟢' },
   { label: 'Anthropic', icon: '🤖' },
+  { label: 'Open AI', icon: '🟢' },
+  
 ];
 const agents = [
-  { label: 'Solana Agent', icon: '🌐' },
+  { label: 'DeFi Agent', icon: '🌐' },
   { label: 'ICP Agent', icon: '🟣' },
 ];
 
