@@ -1,6 +1,5 @@
-# Ask ICP Agent
-
-A ChatGPT-like AI assistant built on the Internet Computer Protocol (ICP) that integrates with Claude API to provide intelligent conversational AI capabilities.
+# PFI Agent
+PFI Agent allow you to program your money , automate your payments workflows, generate reports on your spendings, move your money with AI, enables knowledge base for ICP related services
 
 ## Features
 
