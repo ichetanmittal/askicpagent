@@ -8,7 +8,7 @@ const Hero = () => (
       width: '100%',
     }}>
       <h1 style={{ fontSize: '4.5rem', fontWeight: 700, marginBottom: '32px', color: '#FFB800', paddingTop:'180px' }}>
-        Ask ICP Agent
+        PFI
       </h1>
       <p style={{ color: '#fff', fontFamily: 'monospace', fontSize: '2rem', margin: 0 }}>
         A modular network of interoperable DeFi agents

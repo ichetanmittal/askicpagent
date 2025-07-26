@@ -24,68 +24,50 @@ const Hero2 = () => (
         <div className="hero2-models-row-inner">
           {/* OpenAI */}
           <div className="hero2-model-card">
-            <span className="hero2-model-icon">
-              <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f916.svg" alt="OpenAI" style={{width: '28px', height: '28px'}} />
-            </span>
+           
             OpenAI
           </div>
           {/* Anthropic */}
           <div className="hero2-model-card">
-            <span className="hero2-model-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Anthropic_logo.svg" alt="Anthropic" style={{width: '28px', height: '28px'}} />
-            </span>
+           
             Anthropic
           </div>
           {/* XAI */}
           <div className="hero2-model-card">
-            <span className="hero2-model-icon" style={{background: '#000'}}>
-              <span style={{color: '#fff', fontWeight: 'bold', fontSize: '1.1rem'}}>X</span>
-            </span>
+           
             XAI
           </div>
           {/* Gemini */}
           <div className="hero2-model-card">
-            <span className="hero2-model-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Gemini" style={{width: '28px', height: '28px'}} />
-            </span>
+           
             Gemini
           </div>
           {/* DeepSeek */}
           <div className="hero2-model-card">
-            <span className="hero2-model-icon">
-              <img src="https://seeklogo.com/images/D/deepseek-logo-6A1B9B7B2B-seeklogo.com.png" alt="DeepSeek" style={{width: '28px', height: '28px'}} />
-            </span>
+            
             DeepSeek
           </div>
           {/* Duplicate for seamless animation */}
           <div className="hero2-model-card">
-            <span className="hero2-model-icon">
-              <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f916.svg" alt="OpenAI" style={{width: '28px', height: '28px'}} />
-            </span>
+            
             OpenAI
           </div>
           <div className="hero2-model-card">
-            <span className="hero2-model-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Anthropic_logo.svg" alt="Anthropic" style={{width: '28px', height: '28px'}} />
-            </span>
+           
             Anthropic
           </div>
-          <div className="hero2-model-card">
+          {/* <div className="hero2-model-card">
             <span className="hero2-model-icon" style={{background: '#000'}}>
               <span style={{color: '#fff', fontWeight: 'bold', fontSize: '1.1rem'}}>X</span>
             </span>
             XAI
-          </div>
+          </div> */}
           <div className="hero2-model-card">
-            <span className="hero2-model-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Gemini" style={{width: '28px', height: '28px'}} />
-            </span>
+            
             Gemini
           </div>
           <div className="hero2-model-card">
-            <span className="hero2-model-icon">
-              <img src="https://seeklogo.com/images/D/deepseek-logo-6A1B9B7B2B-seeklogo.com.png" alt="DeepSeek" style={{width: '28px', height: '28px'}} />
-            </span>
+            
             DeepSeek
           </div>
         </div>

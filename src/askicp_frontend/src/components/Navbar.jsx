@@ -48,7 +48,7 @@ const Navbar = () => {
           {/* Logo and Title */}
           <div className="navbar-logo">
             {/* <span className="navbar-logo-icon">🐝</span> */}
-            <span className="navbar-logo-title">Ask ICP Agent</span>
+            <span className="navbar-logo-title">PFI</span>
           </div>
           {/* Navigation Buttons */}
           <div className="navbar-nav">
