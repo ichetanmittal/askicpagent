@@ -6,7 +6,7 @@ const Knowledge = () => {
   return (
     <div className="knowledge-container">
       <h2 className="title">
-        <span className="icon">🔁</span> Trading Agent
+        <span className="icon"></span> Trading Agent
       </h2>
       <p className="objective">
         <strong>Objective:</strong> Make trades via Jupiter with information from the Market Agent and Social Agent
