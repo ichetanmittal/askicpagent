@@ -1,0 +1,178 @@
+/* Main container with dotted background */
+.trading-network-container {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background-color: #1a1a1a;
+    background-image: radial-gradient(circle, #333333 1px, transparent 1px);
+    background-size: 20px 20px;
+    display: flex;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  /* Network diagram container */
+  .network-diagram {
+    position: relative;
+    width: 384px;
+    height: 384px;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) translateX(0px);
+    }
+    25% {
+      transform: translateY(-3px) translateX(2px);
+    }
+    50% {
+      transform: translateY(2px) translateX(-1px);
+    }
+    75% {
+      transform: translateY(-1px) translateX(3px);
+    }
+  }
+  
+  /* Connection lines SVG */
+  .connection-lines {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .connection-line {
+    stroke: #B8860B;
+    stroke-width: 2;
+    filter: drop-shadow(0 0 3px rgba(184, 134, 11, 0.6));
+  }
+  
+  /* Base node styles */
+  .node {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #B8860B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 
+      0 0 15px rgba(184, 134, 11, 0.4),
+      0 0 30px rgba(184, 134, 11, 0.2);
+  }
+  
+  .node-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .node-title {
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .node-subtitle {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+  
+  .node-icon {
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Market Agent - Top */
+  .market-agent {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: #1f2937;
+    font-size: 0.75rem;
+  }
+  
+  .market-agent .node-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+  
+  /* Trading Agent - Center */
+  .trading-agent {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    background-color: #B8860B;
+    font-size: 1rem;
+    box-shadow: 
+      0 0 20px rgba(184, 134, 11, 0.6),
+      0 0 40px rgba(184, 134, 11, 0.4),
+      0 0 60px rgba(184, 134, 11, 0.2),
+      inset 0 0 20px rgba(255, 215, 0, 0.3);
+    border: 3px solid #FFD700;
+  }
+  
+  .trading-icon {
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  /* DEX Aggregator - Bottom Left */
+  .dex-aggregator {
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #1f2937;
+    font-size: 0.75rem;
+  }
+  
+  /* Social Agent - Bottom Right */
+  .social-agent {
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #1f2937;
+    font-size: 0.75rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .trading-network-container {
+      padding: 1rem;
+    }
+    
+    .network-diagram {
+      width: 300px;
+      height: 300px;
+    }
+    
+    .connection-lines {
+      transform: scale(0.78);
+    }
+    
+    .trading-agent {
+      width: 120px;
+      height: 120px;
+      font-size: 0.9rem;
+    }
+    
+    .market-agent,
+    .dex-aggregator,
+    .social-agent {
+      width: 65px;
+      height: 65px;
+      font-size: 0.7rem;
+    }
+  }

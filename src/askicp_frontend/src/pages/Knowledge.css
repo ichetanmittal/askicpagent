@@ -1,0 +1,43 @@
+.knowledge-container {
+    /* background-color: #111; */
+    color: #eee;
+    margin-top: 30px;
+    padding: 2rem;
+    margin-left: 50px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .icon {
+    font-size: 1.3rem;
+  }
+  
+  .kobjective {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: 300px;
+  }
+  
+  .sample-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .query-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
+  
