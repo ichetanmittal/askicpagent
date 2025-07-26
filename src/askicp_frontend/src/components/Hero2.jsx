@@ -133,74 +133,62 @@ const Hero2 = () => (
         <div className="hero2-services-row-inner">
           {/* Helius */}
           <div className="hero2-service-card">
-            <span className="hero2-service-icon">
-              <img src="https://helius.xyz/favicon.ico" alt="Helius" style={{width: '24px', height: '24px'}} />
-            </span>
-            Helius
+            
+            ICSwap
           </div>
           {/* Twitter */}
           <div className="hero2-service-card">
-            <span className="hero2-service-icon">
-              <img src="https://abs.twimg.com/favicons/twitter.2.ico" alt="Twitter" style={{width: '24px', height: '24px'}} />
-            </span>
-            Twitter
+            
+            Sonic
           </div>
           {/* Jupiter */}
           <div className="hero2-service-card">
-            <span className="hero2-service-icon">
-              <img src="https://jup.ag/favicon.ico" alt="Jupiter" style={{width: '24px', height: '24px'}} />
-            </span>
-            Jupiter
+            
+            Bionic
           </div>
           {/* Staking Rewards */}
           <div className="hero2-service-card">
-            <span className="hero2-service-icon">
-              <img src="https://stakingrewards.com/favicon.ico" alt="Staking Rewards" style={{width: '24px', height: '24px'}} />
-            </span>
-            Staking Rewards
+           
+            Plug Wallet
           </div>
           {/* Birdeye */}
           <div className="hero2-service-card">
-            <span className="hero2-service-icon">
-              <img src="https://birdeye.so/favicon.ico" alt="Birdeye" style={{width: '24px', height: '24px'}} />
-            </span>
-            Birdeye
+            
+            Dfinity Explorer
           </div>
           {/* 0x */}
           <div className="hero2-service-card">
-            <span className="hero2-service-icon">
-              <img src="https://0x.org/favicon.ico" alt="0x" style={{width: '24px', height: '24px'}} />
-            </span>
-            0x
+            
+            SNS(Service Nervous System)
           </div>
           {/* Arkham */}
-          <div className="hero2-service-card">
+          {/* <div className="hero2-service-card">
             <span className="hero2-service-icon">
               <img src="https://arkhamintelligence.com/favicon.ico" alt="Arkham" style={{width: '24px', height: '24px'}} />
             </span>
             Arkham
-          </div>
+          </div> */}
           {/* Raydium */}
-          <div className="hero2-service-card">
+          {/* <div className="hero2-service-card">
             <span className="hero2-service-icon">
               <img src="https://raydium.io/favicon.ico" alt="Raydium" style={{width: '24px', height: '24px'}} />
             </span>
             Raydium
-          </div>
+          </div> */}
           {/* Moralis */}
-          <div className="hero2-service-card">
+          {/* <div className="hero2-service-card">
             <span className="hero2-service-icon">
               <img src="https://moralis.io/favicon.ico" alt="Moralis" style={{width: '24px', height: '24px'}} />
             </span>
             Moralis
-          </div>
+          </div> */}
           {/* HelloMoon */}
-          <div className="hero2-service-card">
+          {/* <div className="hero2-service-card">
             <span className="hero2-service-icon">
               <img src="https://hellomoon.io/favicon.ico" alt="HelloMoon" style={{width: '24px', height: '24px'}} />
             </span>
             HelloMoon
-          </div>
+          </div> */}
           {/* Duplicate for seamless animation */}
           <div className="hero2-service-card">
             <span className="hero2-service-icon">
