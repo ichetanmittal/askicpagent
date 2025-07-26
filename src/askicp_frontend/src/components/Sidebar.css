@@ -1,7 +1,7 @@
 .sidebar {
   width: 260px;
   height: 100vh;
-  background: #171717;
+  background: #232323;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -214,4 +214,29 @@
 
 .sidebar.contracted .sidebar-logo-toggle {
   margin-left: 10px;
+}
+
+.sidebar-connect-wallet-btn {
+  background: transparent;
+  color: #FFB800;
+  border: 1.5px solid #FFB800;
+  border-radius: 12px;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+  justify-content: center;
+}
+
+.sidebar-connect-wallet-btn:hover {
+  background: rgba(255, 184, 0, 0.08);
+  color: #FFD54F;
+  border-color: #FFD54F;
 }

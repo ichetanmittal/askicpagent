@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import './Navbar.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { MdAccountCircle } from 'react-icons/md';
 
 const agentMenuItems = [
   { label: 'Trading', icon: 'fa-arrows-rotate', link: '/agents/trading' },
@@ -70,7 +71,7 @@ const Navbar = () => {
               className="navbar-profile-container"
               onClick={() => setShowProfileDropdown(!showProfileDropdown)}
             >
-              <i className="fa-solid fa-user navbar-profile-icon"></i>
+              <MdAccountCircle className="navbar-profile-icon" />
               {showProfileDropdown && (
                 <div className="navbar-profile-dropdown">
                   <div className="navbar-profile-header">Principal ID</div>
